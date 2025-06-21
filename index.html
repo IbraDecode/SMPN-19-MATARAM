@@ -1,0 +1,945 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMPN 19 Mataram - Sekolah Unggul Berkarakter</title>
+    <meta name="description" content="SMPN 19 Mataram - Membangun generasi unggul dengan pendidikan berkualitas, karakter yang kuat, dan prestasi yang membanggakan.">
+    <meta name="keywords" content="SMPN 19 Mataram, sekolah menengah pertama, pendidikan, NTB, Mataram">
+    <meta name="author" content="SMPN 19 Mataram">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="SMPN 19 Mataram - Sekolah Unggul Berkarakter">
+    <meta property="og:description" content="Membangun generasi unggul dengan pendidikan berkualitas, karakter yang kuat, dan prestasi yang membanggakan.">
+    <meta property="og:image" content="assets/images/banner-smpn19.png">
+    <meta property="og:url" content="#">
+    <meta property="og:type" content="website">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/images/smpn19-logo.jpg">
+    <link rel="apple-touch-icon" href="assets/images/smpn19-logo.jpg">
+    
+    <!-- Preconnect for Performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- External Libraries -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom Styles -->
+    <link href="assets/css/main.css" rel="stylesheet">
+    <link href="assets/css/animations.css" rel="stylesheet">
+    <link href="assets/css/components.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Custom Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loading-container">
+            <!-- Background Animation -->
+            <div class="loading-bg">
+                <div class="particle" style="--delay: 0s; --duration: 3s;"></div>
+                <div class="particle" style="--delay: 0.5s; --duration: 2.5s;"></div>
+                <div class="particle" style="--delay: 1s; --duration: 3.5s;"></div>
+                <div class="particle" style="--delay: 1.5s; --duration: 2s;"></div>
+                <div class="particle" style="--delay: 2s; --duration: 4s;"></div>
+            </div>
+            
+            <!-- Logo Animation -->
+            <div class="loading-logo">
+                <img src="assets/images/smpn19-logo.jpg" alt="SMPN 19 Logo" class="logo-img">
+                <div class="logo-ring"></div>
+                <div class="logo-ring-2"></div>
+            </div>
+            
+            <!-- Text Animation -->
+            <div class="loading-text">
+                <div class="text-line-1">
+                    <span class="letter" data-delay="0.1">S</span>
+                    <span class="letter" data-delay="0.2">M</span>
+                    <span class="letter" data-delay="0.3">P</span>
+                    <span class="letter" data-delay="0.4">N</span>
+                    <span class="letter number" data-delay="0.5">1</span>
+                    <span class="letter number" data-delay="0.6">9</span>
+                </div>
+                <div class="text-line-2">
+                    <span class="letter" data-delay="0.8">M</span>
+                    <span class="letter" data-delay="0.9">A</span>
+                    <span class="letter" data-delay="1.0">T</span>
+                    <span class="letter" data-delay="1.1">A</span>
+                    <span class="letter" data-delay="1.2">R</span>
+                    <span class="letter" data-delay="1.3">A</span>
+                    <span class="letter" data-delay="1.4">M</span>
+                </div>
+            </div>
+            
+            <!-- Tagline -->
+            <div class="loading-tagline">
+                <p>Sekolah Unggul Berkarakter</p>
+            </div>
+            
+            <!-- Progress Bar -->
+            <div class="loading-progress">
+                <div class="progress-bar">
+                    <div class="progress-fill"></div>
+                </div>
+                <div class="progress-text">
+                    <span class="progress-percentage">0%</span>
+                    <span class="progress-status">Memuat...</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="#home">
+                <img src="assets/images/smpn19-logo.jpg" alt="Logo SMPN 19" class="logo">
+                <div class="brand-text">
+                    <span class="brand-name">SMPN 19 Mataram</span>
+                    <small class="brand-tagline">Sekolah Unggul Berkarakter</small>
+                </div>
+            </a>
+            
+            <!-- Dark Mode Toggle -->
+            <div class="theme-toggle d-lg-none">
+                <button class="btn btn-theme" id="themeToggle" aria-label="Toggle Dark Mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#profil">Profil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#berita">Berita</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#galeri">Galeri</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#prestasi">Prestasi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#kontak">Kontak</a>
+                    </li>
+                    <li class="nav-item d-none d-lg-block">
+                        <button class="btn btn-theme ms-2" id="themeToggleDesktop" aria-label="Toggle Dark Mode">
+                            <i class="fas fa-moon"></i>
+                        </button>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-primary text-white px-3 ms-2" href="#ppdb">PPDB 2025</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-bg">
+            <div class="hero-overlay"></div>
+            <div class="hero-particles">
+                <div class="particle-float" style="--delay: 0s;"></div>
+                <div class="particle-float" style="--delay: 2s;"></div>
+                <div class="particle-float" style="--delay: 4s;"></div>
+                <div class="particle-float" style="--delay: 6s;"></div>
+            </div>
+        </div>
+        
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-6" data-aos="fade-right" data-aos-duration="1000">
+                    <div class="hero-content">
+                        <div class="hero-badge" data-aos="fade-up" data-aos-delay="200">
+                            <i class="fas fa-award me-2"></i>
+                            Sekolah Favorit di Mataram
+                        </div>
+                        
+                        <h1 class="hero-title" data-aos="fade-up" data-aos-delay="400">
+                            Selamat Datang di<br>
+                            <span class="text-gradient">SMPN 19 Mataram</span>
+                        </h1>
+                        
+                        <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="600">
+                            Membangun generasi unggul dengan pendidikan berkualitas, 
+                            karakter yang kuat, dan prestasi yang membanggakan di Nusa Tenggara Barat.
+                        </p>
+                        
+                        <!-- Interactive Stats -->
+                        <div class="hero-stats" data-aos="fade-up" data-aos-delay="800">
+                            <div class="row">
+                                <div class="col-4">
+                                    <div class="stat-item">
+                                        <div class="stat-number" data-count="499">0</div>
+                                        <div class="stat-label">Siswa</div>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="stat-item">
+                                        <div class="stat-number" data-count="25">0</div>
+                                        <div class="stat-label">Guru</div>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="stat-item">
+                                        <div class="stat-number" data-count="14">0</div>
+                                        <div class="stat-label">Kelas</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="hero-buttons" data-aos="fade-up" data-aos-delay="1000">
+                            <a href="#profil" class="btn btn-primary btn-lg me-3">
+                                <i class="fas fa-school me-2"></i>Profil Sekolah
+                            </a>
+                            <a href="#ppdb" class="btn btn-outline-light btn-lg">
+                                <i class="fas fa-user-graduate me-2"></i>PPDB 2025
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+                    <div class="hero-image">
+                        <div class="image-container">
+                            <img src="assets/images/banner-smpn19.png" alt="SMPN 19 Mataram" class="main-image">
+                            
+                            <!-- Floating Cards -->
+                            <div class="floating-cards">
+                                <div class="floating-card card-1">
+                                    <i class="fas fa-trophy"></i>
+                                    <span>Prestasi Terbaik</span>
+                                </div>
+                                <div class="floating-card card-2">
+                                    <i class="fas fa-users"></i>
+                                    <span>499 Siswa</span>
+                                </div>
+                                <div class="floating-card card-3">
+                                    <i class="fas fa-graduation-cap"></i>
+                                    <span>Lulusan Berkualitas</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator">
+            <div class="scroll-mouse">
+                <div class="scroll-wheel"></div>
+            </div>
+            <span>Scroll untuk melihat lebih banyak</span>
+        </div>
+    </section>
+
+    <!-- Quick Info Bar -->
+    <section class="quick-info-bar">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="quick-info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h6>Lokasi</h6>
+                        <p>Jl. Dr. Soedjono, Mataram</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="quick-info-item">
+                        <i class="fas fa-phone"></i>
+                        <h6>Telepon</h6>
+                        <p>(0370) 123-4567</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="quick-info-item">
+                        <i class="fas fa-envelope"></i>
+                        <h6>Email</h6>
+                        <p>info@smpn19mataram.sch.id</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                    <div class="quick-info-item">
+                        <i class="fas fa-clock"></i>
+                        <h6>Jam Operasional</h6>
+                        <p>07:00 - 15:00 WIB</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Profile Section -->
+    <section id="profil" class="profile-section">
+        <div class="container">
+            <div class="section-header text-center" data-aos="fade-up">
+                <h2 class="section-title">Profil Sekolah</h2>
+                <p class="section-subtitle">Mengenal lebih dekat SMPN 19 Mataram</p>
+            </div>
+            
+            <div class="row align-items-center mb-5">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <div class="profile-content">
+                        <h3>Tentang SMPN 19 Mataram</h3>
+                        <p class="lead">
+                            SMPN 19 Mataram adalah sekolah menengah pertama negeri yang berlokasi di 
+                            Jl. Dr. Soedjono, Dasan Cermen, Sandubaya, Mataram, Nusa Tenggara Barat.
+                        </p>
+                        
+                        <div class="profile-highlights">
+                            <div class="highlight-item">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="highlight-content">
+                                    <h6>Lokasi Strategis</h6>
+                                    <p>Terletak di pusat kota Mataram dengan akses mudah</p>
+                                </div>
+                            </div>
+                            
+                            <div class="highlight-item">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-building"></i>
+                                </div>
+                                <div class="highlight-content">
+                                    <h6>Fasilitas Lengkap</h6>
+                                    <p>14 ruang kelas, 2 laboratorium, perpustakaan modern</p>
+                                </div>
+                            </div>
+                            
+                            <div class="highlight-item">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-users"></i>
+                                </div>
+                                <div class="highlight-content">
+                                    <h6>Komunitas Solid</h6>
+                                    <p>499 siswa dan 25 guru berpengalaman</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="profile-image">
+                        <img src="assets/images/kepala-sekolah.jpg" alt="Kepala Sekolah" class="img-fluid">
+                        <div class="profile-card">
+                            <h5>Nasruddin</h5>
+                            <p class="position">Kepala Sekolah</p>
+                            <blockquote>
+                                "Siap memimpin generasi unggul dengan pendidikan berkualitas dan berkarakter"
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="statistics-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="stat-content">
+                            <div class="stat-number" data-count="499">0</div>
+                            <div class="stat-label">Total Siswa</div>
+                            <div class="stat-desc">260 Laki-laki, 239 Perempuan</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-chalkboard-teacher"></i>
+                        </div>
+                        <div class="stat-content">
+                            <div class="stat-number" data-count="25">0</div>
+                            <div class="stat-label">Guru & Staff</div>
+                            <div class="stat-desc">Tenaga Pendidik Berpengalaman</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-door-open"></i>
+                        </div>
+                        <div class="stat-content">
+                            <div class="stat-number" data-count="14">0</div>
+                            <div class="stat-label">Ruang Kelas</div>
+                            <div class="stat-desc">~36 Siswa per Kelas</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-expand-arrows-alt"></i>
+                        </div>
+                        <div class="stat-content">
+                            <div class="stat-number" data-count="5280">0</div>
+                            <div class="stat-label">Luas Tanah (m²)</div>
+                            <div class="stat-desc">Area Pembelajaran Luas</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- News Section -->
+    <section id="berita" class="news-section">
+        <div class="container">
+            <div class="section-header text-center" data-aos="fade-up">
+                <h2 class="section-title">Berita Terbaru</h2>
+                <p class="section-subtitle">Informasi dan kegiatan terkini SMPN 19 Mataram</p>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <article class="news-card">
+                        <div class="news-image">
+                            <img src="assets/images/berita/IMG-20250618-WA0011.jpg" alt="Berita 1">
+                            <div class="news-category">Kegiatan</div>
+                        </div>
+                        <div class="news-content">
+                            <div class="news-meta">
+                                <span><i class="fas fa-calendar"></i> 18 Juni 2025</span>
+                                <span><i class="fas fa-user"></i> Admin</span>
+                            </div>
+                            <h4 class="news-title">Kegiatan Pembelajaran Aktif di SMPN 19</h4>
+                            <p class="news-excerpt">
+                                Siswa-siswi SMPN 19 Mataram mengikuti kegiatan pembelajaran aktif 
+                                yang mengembangkan kreativitas dan kemampuan berpikir kritis.
+                            </p>
+                            <a href="#" class="btn btn-outline-primary btn-sm">Baca Selengkapnya</a>
+                        </div>
+                    </article>
+                </div>
+                
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <article class="news-card">
+                        <div class="news-image">
+                            <img src="assets/images/berita/IMG-20250618-WA0013.jpg" alt="Berita 2">
+                            <div class="news-category">Prestasi</div>
+                        </div>
+                        <div class="news-content">
+                            <div class="news-meta">
+                                <span><i class="fas fa-calendar"></i> 15 Juni 2025</span>
+                                <span><i class="fas fa-user"></i> Admin</span>
+                            </div>
+                            <h4 class="news-title">Meraih Prestasi di Kompetisi Sains</h4>
+                            <p class="news-excerpt">
+                                Tim sains SMPN 19 Mataram berhasil meraih juara dalam kompetisi 
+                                sains tingkat provinsi dengan persiapan yang matang.
+                            </p>
+                            <a href="#" class="btn btn-outline-primary btn-sm">Baca Selengkapnya</a>
+                        </div>
+                    </article>
+                </div>
+                
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <article class="news-card">
+                        <div class="news-image">
+                            <img src="assets/images/berita/IMG-20250618-WA0020.jpg" alt="Berita 3">
+                            <div class="news-category">Event</div>
+                        </div>
+                        <div class="news-content">
+                            <div class="news-meta">
+                                <span><i class="fas fa-calendar"></i> 12 Juni 2025</span>
+                                <span><i class="fas fa-user"></i> Admin</span>
+                            </div>
+                            <h4 class="news-title">Persiapan PPDB 2025/2026</h4>
+                            <p class="news-excerpt">
+                                SMPN 19 Mataram mempersiapkan segala kebutuhan untuk penerimaan 
+                                peserta didik baru tahun ajaran 2025/2026.
+                            </p>
+                            <a href="#" class="btn btn-outline-primary btn-sm">Baca Selengkapnya</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+            
+            <div class="text-center mt-4" data-aos="fade-up">
+                <a href="pages/berita.html" class="btn btn-primary">Lihat Semua Berita</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="galeri" class="gallery-section">
+        <div class="container">
+            <div class="section-header text-center" data-aos="fade-up">
+                <h2 class="section-title">Galeri Foto</h2>
+                <p class="section-subtitle">Dokumentasi kegiatan dan fasilitas sekolah</p>
+            </div>
+            
+            <!-- Gallery Filter -->
+            <div class="gallery-filter text-center mb-4" data-aos="fade-up" data-aos-delay="200">
+                <button class="filter-btn active" data-filter="all">Semua</button>
+                <button class="filter-btn" data-filter="kegiatan">Kegiatan</button>
+                <button class="filter-btn" data-filter="fasilitas">Fasilitas</button>
+                <button class="filter-btn" data-filter="prestasi">Prestasi</button>
+            </div>
+            
+            <div class="gallery-grid" data-aos="fade-up" data-aos-delay="400">
+                <div class="gallery-item" data-category="kegiatan">
+                    <img src="assets/images/galeri/IMG-20250618-WA0008.jpg" alt="Kegiatan 1">
+                    <div class="gallery-overlay">
+                        <div class="gallery-content">
+                            <h5>Kegiatan Pembelajaran</h5>
+                            <p>Suasana pembelajaran yang aktif dan menyenangkan</p>
+                            <button class="btn btn-light btn-sm" onclick="openLightbox(this)">
+                                <i class="fas fa-expand"></i> Lihat
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="kegiatan">
+                    <img src="assets/images/galeri/IMG-20250618-WA0009.jpg" alt="Kegiatan 2">
+                    <div class="gallery-overlay">
+                        <div class="gallery-content">
+                            <h5>Diskusi Kelompok</h5>
+                            <p>Siswa berdiskusi dalam kelompok belajar</p>
+                            <button class="btn btn-light btn-sm" onclick="openLightbox(this)">
+                                <i class="fas fa-expand"></i> Lihat
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="fasilitas">
+                    <img src="assets/images/galeri/IMG-20250618-WA0010.jpg" alt="Fasilitas 1">
+                    <div class="gallery-overlay">
+                        <div class="gallery-content">
+                            <h5>Ruang Kelas</h5>
+                            <p>Ruang kelas yang nyaman dan modern</p>
+                            <button class="btn btn-light btn-sm" onclick="openLightbox(this)">
+                                <i class="fas fa-expand"></i> Lihat
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="kegiatan">
+                    <img src="assets/images/galeri/IMG-20250618-WA0012.jpg" alt="Kegiatan 3">
+                    <div class="gallery-overlay">
+                        <div class="gallery-content">
+                            <h5>Kegiatan Olahraga</h5>
+                            <p>Aktivitas olahraga untuk kesehatan siswa</p>
+                            <button class="btn btn-light btn-sm" onclick="openLightbox(this)">
+                                <i class="fas fa-expand"></i> Lihat
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="prestasi">
+                    <img src="assets/images/galeri/IMG-20250618-WA0013.jpg" alt="Prestasi 1">
+                    <div class="gallery-overlay">
+                        <div class="gallery-content">
+                            <h5>Prestasi Siswa</h5>
+                            <p>Pencapaian membanggakan siswa SMPN 19</p>
+                            <button class="btn btn-light btn-sm" onclick="openLightbox(this)">
+                                <i class="fas fa-expand"></i> Lihat
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="fasilitas">
+                    <img src="assets/images/galeri/IMG-20250618-WA0014.jpg" alt="Fasilitas 2">
+                    <div class="gallery-overlay">
+                        <div class="gallery-content">
+                            <h5>Laboratorium</h5>
+                            <p>Fasilitas laboratorium yang lengkap</p>
+                            <button class="btn btn-light btn-sm" onclick="openLightbox(this)">
+                                <i class="fas fa-expand"></i> Lihat
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-4" data-aos="fade-up">
+                <a href="pages/galeri.html" class="btn btn-primary">Lihat Semua Foto</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="prestasi" class="achievements-section">
+        <div class="container">
+            <div class="section-header text-center" data-aos="fade-up">
+                <h2 class="section-title">Prestasi Sekolah</h2>
+                <p class="section-subtitle">Pencapaian membanggakan SMPN 19 Mataram</p>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-3 col-md-6" data-aos="flip-left" data-aos-delay="100">
+                    <div class="achievement-card">
+                        <div class="achievement-icon">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                        <h4>Juara 1</h4>
+                        <p>Lomba Sains Tingkat Provinsi</p>
+                        <span class="achievement-year">2024</span>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6" data-aos="flip-left" data-aos-delay="200">
+                    <div class="achievement-card">
+                        <div class="achievement-icon">
+                            <i class="fas fa-medal"></i>
+                        </div>
+                        <h4>Juara 2</h4>
+                        <p>Olimpiade Matematika Nasional</p>
+                        <span class="achievement-year">2024</span>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6" data-aos="flip-left" data-aos-delay="300">
+                    <div class="achievement-card">
+                        <div class="achievement-icon">
+                            <i class="fas fa-award"></i>
+                        </div>
+                        <h4>Juara 1</h4>
+                        <p>Lomba Debat Bahasa Indonesia</p>
+                        <span class="achievement-year">2024</span>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6" data-aos="flip-left" data-aos-delay="400">
+                    <div class="achievement-card">
+                        <div class="achievement-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>Sekolah Adiwiyata</h4>
+                        <p>Penghargaan Lingkungan</p>
+                        <span class="achievement-year">2024</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PPDB Section -->
+    <section id="ppdb" class="ppdb-section">
+        <div class="container">
+            <div class="section-header text-center" data-aos="fade-up">
+                <h2 class="section-title">PPDB 2025/2026</h2>
+                <p class="section-subtitle">Penerimaan Peserta Didik Baru Tahun Ajaran 2025/2026</p>
+            </div>
+            
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="ppdb-card" data-aos="zoom-in">
+                        <div class="ppdb-header">
+                            <h3><i class="fas fa-user-graduate me-2"></i>Informasi PPDB</h3>
+                        </div>
+                        
+                        <div class="ppdb-content">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h5><i class="fas fa-route me-2"></i>Jalur Penerimaan</h5>
+                                    <ul class="ppdb-list">
+                                        <li><strong>Zonasi:</strong> 50% dari daya tampung</li>
+                                        <li><strong>Afirmasi:</strong> Sesuai kuota yang ditetapkan</li>
+                                        <li><strong>Prestasi:</strong> Sesuai kuota yang ditetapkan</li>
+                                        <li><strong>Mutasi:</strong> Sesuai kuota yang ditetapkan</li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="col-md-6">
+                                    <h5><i class="fas fa-clipboard-check me-2"></i>Persyaratan</h5>
+                                    <ul class="ppdb-list">
+                                        <li>Usia maksimal 15 tahun pada 1 Juli 2025</li>
+                                        <li>Lulus SD/MI atau sederajat</li>
+                                        <li>Kartu Keluarga (KK)</li>
+                                        <li>Akta Kelahiran</li>
+                                        <li>Rapor SD/MI semester 1-5</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <div class="ppdb-timeline">
+                                <h5><i class="fas fa-calendar-alt me-2"></i>Jadwal PPDB</h5>
+                                <div class="timeline">
+                                    <div class="timeline-item">
+                                        <div class="timeline-date">1-7 Juli</div>
+                                        <div class="timeline-content">
+                                            <h6>Pendaftaran Online</h6>
+                                            <p>Pendaftaran melalui sistem online</p>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-item">
+                                        <div class="timeline-date">8-10 Juli</div>
+                                        <div class="timeline-content">
+                                            <h6>Verifikasi Berkas</h6>
+                                            <p>Verifikasi dokumen persyaratan</p>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-item">
+                                        <div class="timeline-date">11-12 Juli</div>
+                                        <div class="timeline-content">
+                                            <h6>Pengumuman</h6>
+                                            <p>Pengumuman hasil seleksi</p>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-item">
+                                        <div class="timeline-date">13-15 Juli</div>
+                                        <div class="timeline-content">
+                                            <h6>Daftar Ulang</h6>
+                                            <p>Daftar ulang siswa yang diterima</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="text-center mt-4">
+                                <a href="#" class="btn btn-primary btn-lg me-3">
+                                    <i class="fas fa-external-link-alt me-2"></i>Daftar Online
+                                </a>
+                                <a href="#" class="btn btn-outline-primary btn-lg">
+                                    <i class="fas fa-download me-2"></i>Download Panduan
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="kontak" class="contact-section">
+        <div class="container">
+            <div class="section-header text-center" data-aos="fade-up">
+                <h2 class="section-title">Hubungi Kami</h2>
+                <p class="section-subtitle">Jangan ragu untuk menghubungi kami</p>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-8" data-aos="fade-right">
+                    <div class="contact-form">
+                        <form id="contactForm">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="name">Nama Lengkap</label>
+                                        <input type="text" class="form-control" id="name" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="email">Email</label>
+                                        <input type="email" class="form-control" id="email" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subjek</label>
+                                <input type="text" class="form-control" id="subject" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Pesan</label>
+                                <textarea class="form-control" id="message" rows="6" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">
+                                <i class="fas fa-paper-plane me-2"></i>Kirim Pesan
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4" data-aos="fade-left">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-content">
+                                <h6>Alamat</h6>
+                                <p>Jl. Dr. Soedjono, Dasan Cermen<br>Sandubaya, Mataram<br>Nusa Tenggara Barat</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-content">
+                                <h6>Telepon</h6>
+                                <p>(0370) 123-4567</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-content">
+                                <h6>Email</h6>
+                                <p>info@smpn19mataram.sch.id</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="contact-content">
+                                <h6>Jam Operasional</h6>
+                                <p>Senin - Jumat: 07:00 - 15:00 WIB<br>Sabtu: 07:00 - 12:00 WIB</p>
+                            </div>
+                        </div>
+                        
+                        <div class="social-links">
+                            <h6>Ikuti Kami</h6>
+                            <div class="social-icons">
+                                <a href="#" class="social-icon facebook">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="#" class="social-icon instagram">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="#" class="social-icon youtube">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
+                                <a href="#" class="social-icon whatsapp">
+                                    <i class="fab fa-whatsapp"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-widget">
+                        <div class="footer-logo">
+                            <img src="assets/images/smpn19-logo.jpg" alt="SMPN 19 Logo">
+                            <h5>SMPN 19 Mataram</h5>
+                        </div>
+                        <p>Membangun generasi unggul dengan pendidikan berkualitas, karakter yang kuat, dan prestasi yang membanggakan.</p>
+                        <div class="footer-social">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                            <a href="#"><i class="fab fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2 col-md-6">
+                    <div class="footer-widget">
+                        <h6>Menu Utama</h6>
+                        <ul class="footer-links">
+                            <li><a href="#home">Beranda</a></li>
+                            <li><a href="#profil">Profil</a></li>
+                            <li><a href="#berita">Berita</a></li>
+                            <li><a href="#galeri">Galeri</a></li>
+                            <li><a href="#kontak">Kontak</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-widget">
+                        <h6>Informasi</h6>
+                        <ul class="footer-links">
+                            <li><a href="#ppdb">PPDB 2025</a></li>
+                            <li><a href="#prestasi">Prestasi</a></li>
+                            <li><a href="#">Fasilitas</a></li>
+                            <li><a href="#">Ekstrakurikuler</a></li>
+                            <li><a href="#">Alumni</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-widget">
+                        <h6>Kontak Info</h6>
+                        <div class="footer-contact">
+                            <p><i class="fas fa-map-marker-alt"></i> Jl. Dr. Soedjono, Mataram</p>
+                            <p><i class="fas fa-phone"></i> (0370) 123-4567</p>
+                            <p><i class="fas fa-envelope"></i> info@smpn19mataram.sch.id</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <p>&copy; 2025 SMPN 19 Mataram. All rights reserved.</p>
+                    </div>
+                    <div class="col-md-6 text-md-end">
+                        <p>Developed with <i class="fas fa-heart text-danger"></i> for Education</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-content">
+            <span class="lightbox-close">&times;</span>
+            <img src="" alt="" id="lightbox-image">
+            <div class="lightbox-caption" id="lightbox-caption"></div>
+        </div>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/animations.js"></script>
+    <script src="assets/js/components.js"></script>
+</body>
+</html>
+
